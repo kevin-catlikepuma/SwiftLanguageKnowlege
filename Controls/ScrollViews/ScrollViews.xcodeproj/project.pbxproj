@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E709DE171C9B76D1005270B9 /* CustomScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E709DE161C9B76D1005270B9 /* CustomScrollViewController.swift */; };
+		E709DE191C9B7BEE005270B9 /* PagedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E709DE181C9B7BEE005270B9 /* PagedScrollViewController.swift */; };
 		E7BEF0AC1C9AC127000D2562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BEF0AB1C9AC127000D2562 /* AppDelegate.swift */; };
 		E7BEF0AE1C9AC127000D2562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BEF0AD1C9AC127000D2562 /* ViewController.swift */; };
 		E7BEF0B11C9AC127000D2562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7BEF0AF1C9AC127000D2562 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E709DE161C9B76D1005270B9 /* CustomScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScrollViewController.swift; sourceTree = "<group>"; };
+		E709DE181C9B7BEE005270B9 /* PagedScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagedScrollViewController.swift; sourceTree = "<group>"; };
 		E7BEF0A81C9AC127000D2562 /* ScrollViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BEF0AB1C9AC127000D2562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7BEF0AD1C9AC127000D2562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				E7BEF0C21C9AC353000D2562 /* slow.png */,
 				E7BEF0AB1C9AC127000D2562 /* AppDelegate.swift */,
 				E7BEF0AD1C9AC127000D2562 /* ViewController.swift */,
+				E709DE161C9B76D1005270B9 /* CustomScrollViewController.swift */,
+				E709DE181C9B7BEE005270B9 /* PagedScrollViewController.swift */,
 				E7BEF0AF1C9AC127000D2562 /* Main.storyboard */,
 				E7BEF0B21C9AC127000D2562 /* Assets.xcassets */,
 				E7BEF0B41C9AC127000D2562 /* LaunchScreen.storyboard */,
@@ -160,7 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BEF0AE1C9AC127000D2562 /* ViewController.swift in Sources */,
+				E709DE191C9B7BEE005270B9 /* PagedScrollViewController.swift in Sources */,
 				E7BEF0AC1C9AC127000D2562 /* AppDelegate.swift in Sources */,
+				E709DE171C9B76D1005270B9 /* CustomScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +316,7 @@
 				E7BEF0BC1C9AC127000D2562 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
