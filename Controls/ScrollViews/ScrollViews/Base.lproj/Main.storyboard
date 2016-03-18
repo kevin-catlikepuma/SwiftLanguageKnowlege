@@ -17,7 +17,7 @@
                             <tableViewSection headerTitle="Table View Section" id="Nq6-5K-evc">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="UqP-rB-v1N" style="IBUITableViewCellStyleDefault" id="AbK-0v-WoA">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AbK-0v-WoA" id="Zxm-Lf-vhf">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -37,7 +37,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="s2Q-Rz-24I">
-                                        <rect key="frame" x="0.0" y="136" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s2Q-Rz-24I" id="iua-wn-bxh">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -57,7 +57,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" id="nza-fT-WHE">
-                                        <rect key="frame" x="0.0" y="180" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="116" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nza-fT-WHE" id="6o2-kz-wOg">
                                             <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
@@ -73,11 +73,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="gvh-Yf-c8G" kind="push" id="eXK-z8-5ba"/>
+                                            <segue destination="CL4-J9-Jda" kind="push" id="Atp-JK-Y75"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" id="PWq-bU-oA3">
-                                        <rect key="frame" x="0.0" y="224" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="160" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PWq-bU-oA3" id="1PU-YH-dGE">
                                             <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
@@ -92,6 +92,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ari-S4-BEg" kind="push" id="rxE-uX-OWr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -142,19 +145,85 @@
             </objects>
             <point key="canvasLocation" x="1825" y="138"/>
         </scene>
-        <!--Paged Scroll View Controller-->
-        <scene sceneID="yll-eN-70O">
+        <!--Peek Paged Scroll View Controller-->
+        <scene sceneID="csP-Lf-SWP">
             <objects>
-                <viewController id="gvh-Yf-c8G" customClass="PagedScrollViewController" customModule="ScrollViews" customModuleProvider="target" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3f5-oV-1xg">
+                <viewController id="ari-S4-BEg" customClass="PeekPagedScrollViewController" customModule="ScrollViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gqA-b7-9Mv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </scrollView>
-                    <navigationItem key="navigationItem" id="72b-rt-jeU"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="55Q-N0-Vy1">
+                                <rect key="frame" x="20" y="495" width="280" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                            <view contentMode="scaleToFill" id="6MV-Iy-JCf" customClass="ScrollViewContainer" customModule="ScrollViews" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="108" width="320" height="352"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="Lqk-I7-FPG">
+                                        <rect key="frame" x="40" y="20" width="240" height="312"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lha-l0-Bee"/>
+                    <connections>
+                        <outlet property="pageControl" destination="55Q-N0-Vy1" id="3Sj-kM-rkt"/>
+                        <outlet property="scrollView" destination="Lqk-I7-FPG" id="w70-i2-o06"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RY0-3J-0PV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ih-42-VIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1428" y="734"/>
+            <point key="canvasLocation" x="1422" y="734"/>
+        </scene>
+        <!--Paged Scroll View Controller-->
+        <scene sceneID="d3a-It-b4E">
+            <objects>
+                <viewController id="CL4-J9-Jda" customClass="PagedScrollViewController" customModule="ScrollViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="g8a-Yg-bOS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="fSU-rW-gnj">
+                                <rect key="frame" x="148" y="461" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                    </scrollView>
+                    <navigationItem key="navigationItem" id="KJk-Or-BEN"/>
+                    <connections>
+                        <outlet property="pageControl" destination="fSU-rW-gnj" id="Kva-vp-b6x"/>
+                        <outlet property="scrollView" destination="g8a-Yg-bOS" id="Q6k-IL-9zZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MyR-7T-8F5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2093" y="753"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pbs-cN-X1r">
+            <objects>
+                <viewController id="MUc-Y0-C0z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KaR-QP-vvo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="X7P-nT-eKz">
+                                <rect key="frame" x="-9" y="-8" width="338" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xa4-Av-WVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2482" y="682"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ECS-jE-u5I">
